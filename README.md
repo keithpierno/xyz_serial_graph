@@ -1,2 +1,4 @@
 # xyz_serial_graph
-C# WinForms utility to graph XYZ data from a serial device
+This tool is a C# WinForms utility to graph XYZ data from a serial device. This project was the result of being unable to find an easy to use graphing software package that could take CSV formatted input from a serial port and plot each element on its own line graph. Currently, all data passed must either be of a double or integer. The tool will parse up to 3 values into the charts all other values will be discarded. If you pass less than 3 values the graphs for only the provided values will be updated. Any malformed values or values that fail to cast to either a double or an int_16 will be discarded.
+
+The project is built with .Net Framwork 4.5.2 and Visual Studio 2015. The solution should build with VS2015 Community Edition or msbuild from the command line. This code is licensed under the BSD lisense and is free to use, extend, port, or embed in your applicaiton. 
